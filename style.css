@@ -1,0 +1,14 @@
+body {
+    padding: 3px 3px 3px 3px;
+    font-family: Gabriola, Courier New, Calibri, Verdana;
+    font-size: 12pt;
+}
+h3 {font-size: 28px;
+    font-family: Gabriola, Courier New, Calibri, Verdana;
+    color: SlateGray;
+}
+h1 {
+    font-size: 40px;
+    font-family: Streetscript Redux;
+    color: SlateGray;
+}
