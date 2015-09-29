@@ -18,26 +18,26 @@ li ul {
 }
 
 body>header {
-    position: absolute;
-    top: 0px;
+    display: inline-block;
+    vertical-align: top;
     width: 15%;
     padding: 2em 1em;
     background-color: #FECB2F;
 }
 
 main {
-    position: absolute;
-    top: 0;
+    display: inline-block;
+    vertical-align: top;
     left: 15%;
-    width: 40%;
+    width: 38%;
     padding: 2em;
     background-color: bisque;
 }
 
 body>section {
-    position: absolute;
+    display: inline-block;
     top: 0px;
-    left: 55%;
+    left: 53%;
     width: 15%;
     background-color: cadetblue;
     overflow: auto;
@@ -45,7 +45,8 @@ body>section {
 
 body>section>article {
     padding: 2em;
-    position: relative;
+    display: inline-block;
+    vertical-align: top;
     height: 10em;
     overflow: auto;
 }
@@ -71,18 +72,18 @@ body>section>article:nth-child(6) {
 }
 
 aside {
-    position: absolute;
-    top: 0px;
-    left: 70%;
+    display: inline-block;
+    vertical-align: top;
+    left: 68%;
     width: 15%;
     padding: 2em;
     background-color: darkkhaki;
 }
 
 body>footer {
-    position: absolute;
-    top: 0px;
-    left: 85%;
+    display: inline-block;
+    vertical-align: top;
+    left: 83%;
     width: 15%;
     padding: 2em;
     background-color: #E29653;
