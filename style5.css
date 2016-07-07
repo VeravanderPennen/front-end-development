@@ -1,0 +1,203 @@
+/* {
+    font-family: calibri, verdana;
+    line-height: 1.2em;
+}*/
+
+body>header {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darksalmon;
+}
+
+[type=text] {
+    border-radius: 3em;
+    border: 0.2em solid darksalmon;
+}
+
+body>header h1 {
+    font-family: helvetica;
+    font-size: 1em;
+    text-shadow: -4px 3px 0 antiquewhite; -14px 7px 0 blue;
+}
+
+body>header>img {
+    width: 100px;
+    height: 100px;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+body>header>img:hover {
+    animation:roll 1s infinite;
+    transform: rotate(30deg);
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body>header>h1 {
+    padding-left: 1em;
+}
+
+body>header>p {
+    padding: 2em;
+    padding-top: 1.7em;
+}
+
+body>header>nav {
+    width: 75em;
+    padding-left: 1em;
+}
+
+body>header>form {
+    padding-left: 2em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    transition: background-color 1s ease-out;
+}
+
+.container:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+
+main {
+    width: 25em;
+    padding: 2em;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: column;
+    padding: 0.5em;
+    margin: 1em;
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0, 0.4);
+}
+
+fieldset span {
+    float: left;
+    width: 8em;
+    text-align: right;
+    margin-right: 2em;
+}
+
+
+.related{
+    width: 16em;
+    padding-left: 1em;
+    padding-right: 2em;
+    margin-top: 2em;
+}
+
+aside {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 27em;
+    padding-left: 2em;
+}
+
+aside section {
+    width: 30%;
+    padding-left: 1em;
+    padding-right: 2.5em;
+    margin-left: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 3em;
+    border: 0.2em solid darksalmon;
+}
+
+aside h2 {
+    animation: skew 2s infinite;
+    transform: skewX(20deg);
+    animation-direction: alternate;
+}
+
+@keyframes skew {
+    0% {
+        transform: skewX(20deg);
+    }
+    100% {
+        transform: skew(-20deg);
+    }
+}
+body>footer {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    background-color: beige;
+    transition: background-color 1s ease-out;
+}
+
+body>footer:hover {
+    background-color: darksalmon;
+    cursor: pointer;
+}
+
+body>footer>section {
+    width: 100em;
+    padding-left: 2em;
+}
+
+body>footer>section>ul>li {
+    float: left;
+}
+
+body>footer>section>ul>;>a {
+    display: block;
+    width: 18em;
+}
+
+.icon1:before {
+    content: url(icons/acrobatreader.gif);
+}
+
+@media all and (max-width:200em) and (min-width: 71em) {
+
+    body>header>nav>ul>li {
+    float: left;
+}
+
+    body>header>nav>ul>li>a {
+    display: block;
+    width: 13em;
+}
+
+}
+
+@media all and (max-width: 70em) and (min-width: 41em) {
+
+}
+
+
+@media all and (max-width: 40em) and (min-width: 10em) {
+
+    body>header {
+        flex-flow: wrap;
+}
+
+    body>header>img {
+        display: none;
+}
+
+    body>footer {
+        flex-flow: wrap;
+}
+
+}
+
